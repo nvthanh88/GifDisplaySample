@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/gifImageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            />
+    <ImageView
+        android:id="@+id/imgMain"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerInParent="true"/>
+    <TextView
+        android:layout_below="@+id/imgMain"
+        android:id="@+id/txtDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Desc"
+        android:textStyle="bold"
+        android:textSize="50dp"
+        android:textColor="#FFFFFF"
+        android:layout_centerHorizontal="true"/>
+        <Button
+            android:layout_below="@id/txtDesc"
+            android:id="@+id/btnStartDemo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Start Demo"
+            />
+
+</RelativeLayout>
